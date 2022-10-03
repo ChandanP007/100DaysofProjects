@@ -1,0 +1,16 @@
+:root{
+    --header : #218380;
+}
+body{
+    margin: 0;padding: 0;
+    font-family: verdana;
+} 
+@media screen and (max-width : 400px){
+    header{background: var(--header); color: white; display: flex; justify-content: space-between; align-items: center; padding: 0px 10px 0px 10px;}
+    h4{font-weight: 50;}
+    a{cursor: pointer;}
+    main{border: 1px solid lighgrey; padding: 20px; margin: 20px; border-radius: 15px; box-shadow: 4px 6px 25px -12px;}
+    button{background: var(--header); color: white; padding: 12px; border-radius: 12px; border: none; cursor: pointer;}
+    ul{padding: 0px;}
+    ul li{display: flex;flex-direction: column; background: var(--header); border: 1px solid var(--header); padding: 10px; margin: 2px; color: white; border-radius: 15px; cursor: pointer;}
+}
