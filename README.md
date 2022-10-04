@@ -1,5 +1,4 @@
 # 100DaysofProjects
-<hr>
 
 📁 List of the Projects  
 1. Multiverse Image Gallery
