@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>codedamn Project</title>
+</head>
+<style>
+    @font-face{
+        font-family: textface;
+        font-size: 16px;
+        src: url(assets/fonts/Roboto-Regular.ttf)
+    }
+    @media only screen and (max-width : 400px)
+    {
+        body{
+        margin: 0;padding: 0;
+        box-sizing: border-box;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('assets/images/bg.jpg');
+        background-position: center;
+        background-size: cover;
+        font-family: 'textface';
+    }
+        ::placeholder{
+            color: rgba(211, 211, 211, 0.603);
+        }
+        #container{
+            width: 300px;
+            margin: auto;
+            margin-top: 200px;
+            padding: 15px;
+            color: white;
+        }
+        .text p{
+            font-size: 13px;
+            line-height: 26.4px;
+            color: rgba(211, 211, 211, 0.603);
+        }
+        .signup{
+            display: flex;
+            flex-direction: column;
+        }
+        .signup input[type=text]{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid rgba(211, 211, 211, 0.603);
+            outline: none;
+            background: none;
+            font-size: 13px;
+            color: rgba(211, 211, 211, 0.603);
+        }
+        .signup button{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            background: #1cb495;
+            color: white;
+            outline: none;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        #socials
+        {
+            margin-top: 150px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            filter: brightness(50%);
+        }
+        .icons img{
+            height: 15px;
+            width: 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .insta,.github,.email{
+            filter: invert(1);
+        }
+        .icon-text{
+            color: white;
+            display: flex;
+            align-items: center;
+            margin-top: -10px;
+        }
+        .icon-text h6{
+            margin-left: 20px;
+            font-weight: 50;
+            font-family: textface;
+        }
+        
+    }
+
+    @media only screen and (min-width: 401px){
+        body{
+            margin: 0;padding: 0;
+            background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('assets/images/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }   
+        h2{
+            font-size: 2rem;
+            
+        }
+        #container{
+            font-family: textface;
+            font-size: 16px;
+            line-height: 24.6px;
+            width: 380px;
+            margin-top: 200px;
+            padding: 20px;
+            margin-left: 15px;
+        }
+        
+        input[type=text]{
+            padding: 7px;
+            border: 1px solid rgba(211, 211, 211, 0.603);
+            border-radius: 4px;
+            width: 200px;
+            outline: none;
+            color: rgba(211, 211, 211, 0.603);
+            background: none;
+        }
+        p{
+            color: rgba(211, 211, 211, 0.603);
+            font-size: 15px;
+        }
+        .signup button{
+            padding: 8px;
+            background: #1cb495;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        ::placeholder{
+            color: rgba(211, 211, 211, 0.603);
+        }
+        #socials
+        {
+            margin-top: 150px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            filter: brightness(50%);
+        }
+        .icons img{
+            height: 15px;
+            width: 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .insta,.github,.email{
+            filter: invert(1);
+        }
+        .icon-text{
+            color: white;
+            display: flex;
+            align-items: center;
+            margin-top: -10px;
+        }
+        .icon-text h6{
+            margin-left: 20px;
+            font-weight: 50;
+            font-family: textface;
+        }
+    }
+    
+</style>
+
+<body>
+    <div id="container">
+        <div class="text">
+            <h2>Eventually</h2>
+            <p>A simple template for telling the world when you'll launch your next thing. Brought to you by 
+            HTML5 UP</p>
+        </div>
+        <div class="signup">
+                <input type="text" name="userEmail" id="" placeholder="Email Address">
+                <button type="submit">Sign Up</button>
+        </div>
+    </div>
+
+    <div id="socials">
+        <div class="icons">
+            <img class="twitter" src="assets/icons/twitter.svg" alt="">
+            <img class="insta" src="assets/icons/instagram.svg" alt="">
+            <img class="github" src="assets/icons/github.svg" alt="">
+            <img class="email" src="assets/icons/email.svg" alt="">
+        </div>
+        <div class="icon-text">
+            <h6>Untitled</h6>
+            <h6>Credits : Unsplash + HTML5UP</h6>
+        </div>
+    </div>
+</body>
+
+</html>
